@@ -1,19 +1,22 @@
 import { useEffect, useState } from "react";
 
 function Day12HomeWork() {
-    const [counter, setCounter] = useState(0);
     const [timer, setTimer] = useState(0);
+    const [isRunning, setIsRunning] = useState(false);
     useEffect(() => {
+        if (!isRunning) return;
         const interval = setInterval(() => {
             setTimer(prev => prev + 1);
         }, 1000);
         return () => clearInterval(interval);
-    }, [timer]);
+    }, [isRunning]);
     return (
         <>
             <h1>{timer}</h1>
-            <h1>{counter}</h1>
-            <button onClick={() => { setCounter(counter + 1) }}>+</button>
+            {/* <button onClick={() => { setIsRunning(!isRunning) }}>{isRunning ? "Stop" : "Start"}</button>  */}
+            <button onClick={() => setIsRunning(true)}>Start</button>
+            <button onClick={() => setIsRunning(false)}>Stop</button>
+            <button onClick={() => setTimer(0)}>Reset</button>
         </>
     )
 }
