@@ -12,11 +12,13 @@ import CreatePost from "./assets/components/Day14Practice";
 import DayTenHomeWork from "./assets/components/DayTenHomeWork";
 import HighNumber from "./assets/components/HighNumber";
 import "bootstrap/dist/css/bootstrap.min.css";
+import MainApp from "./assets/components/Day15/MainApp";
 
 
 export default function App() {
   return (
     <div className="min-h-screen flex items-center justify-center flex-col bg-dark">
+      <ToastContainer/>
       {/* <ToggleText />
       <ConditionalRenderingWithLists />
       <HighNumber />
@@ -29,8 +31,8 @@ export default function App() {
       {/* <UserList/>
       <Post/>
       <CreatePost/> */}
-      <RegisterForm/>
-      <ToastContainer/>
+      {/* <RegisterForm/> */}
+      <MainApp/>
     </div>
   )
 }
