@@ -12,12 +12,13 @@ import CreatePost from "./assets/components/Day14Practice";
 import DayTenHomeWork from "./assets/components/DayTenHomeWork";
 import HighNumber from "./assets/components/HighNumber";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MainApp from "./assets/components/Day15/MainApp";
+import MainApp1 from "./assets/components/Day16/CounterAppUsingContext/MainApp";
+import ThemeChanger from "./assets/components/Day16/Day16MiniPractice/ThemeChanger";
 
 
 export default function App() {
   return (
-    <div className="min-h-screen flex items-center justify-center flex-col bg-dark">
+    <div className="min-h-screen flex items-center justify-center flex-col">
       <ToastContainer/>
       {/* <ToggleText />
       <ConditionalRenderingWithLists />
@@ -32,7 +33,10 @@ export default function App() {
       <Post/>
       <CreatePost/> */}
       {/* <RegisterForm/> */}
-      <MainApp/>
+      {/* <MainApp/> */}
+        {/* <MainApp1/> */}
+      {/* <ThemeChanger/> */}
+      <ThemeChanger/>
     </div>
   )
 }
