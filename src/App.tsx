@@ -12,8 +12,9 @@ import CreatePost from "./assets/components/Day14Practice";
 import DayTenHomeWork from "./assets/components/DayTenHomeWork";
 import HighNumber from "./assets/components/HighNumber";
 import "bootstrap/dist/css/bootstrap.min.css";
-import MainApp1 from "./assets/components/Day16/CounterAppUsingContext/MainApp";
-import ThemeChanger from "./assets/components/Day16/Day16MiniPractice/ThemeChanger";
+import ThemeChanger from "./assets/components/Day16/Homework/ThemeChanger";
+import Toggle from "./assets/Day17/homework/Toggle";
+import OnlineIndicator from "./assets/Day17/homework/OnlineIndicator";
 
 
 export default function App() {
@@ -36,7 +37,9 @@ export default function App() {
       {/* <MainApp/> */}
         {/* <MainApp1/> */}
       {/* <ThemeChanger/> */}
-      <ThemeChanger/>
+      {/* <ThemeChanger/> */}
+      {/* <Toggle/> */}
+      <OnlineIndicator/>
     </div>
   )
 }
